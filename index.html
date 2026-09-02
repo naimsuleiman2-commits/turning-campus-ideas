@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Turning Campus Ideas into Reality | Suleiman Naim Gambo</title>
+
+<meta name="description" content="Turning Campus Ideas into Reality — A Practical Guide for Nigerian Student Entrepreneurship and Innovation by Comrade Suleiman Naim Gambo. Official book release on 19 September 2026.">
+
+<meta name="keywords" content="Turning Campus Ideas into Reality, Suleiman Naim Gambo, Nigerian students, student entrepreneurship, campus business, innovation">
+
+<meta name="author" content="Comrade Suleiman Naim Gambo">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family: Georgia, "Times New Roman", serif;
+    background:#f7f2e8;
+    color:#14263f;
+    line-height:1.7;
+}
+
+.container{
+    width:90%;
+    max-width:1150px;
+    margin:auto;
+}
+
+/* NAVIGATION */
+
+nav{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    padding:22px 0;
+    z-index:10;
+}
+
+.nav-inner{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    color:#d9b86c;
+    font-weight:bold;
+    font-size:18px;
+    letter-spacing:1px;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    font-family:Arial,sans-serif;
+    font-size:14px;
+}
+
+/* HERO */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    text-align:center;
+    color:white;
+    background:
+        radial-gradient(circle at top right,rgba(216,181,106,.18),transparent 35%),
+        linear-gradient(135deg,#06162c,#102d4c);
+    padding:110px 20px 80px;
+}
+
+.hero-content{
+    max-width:900px;
+    margin:auto;
+}
+
+.badge{
+    display:inline-block;
+    border:1px solid #d9b86c;
+    color:#e3c77f;
+    padding:9px 20px;
+    border-radius:40px;
+    font-family:Arial,sans-serif;
+    font-size:12px;
+    font-weight:bold;
+    letter-spacing:2px;
+    margin-bottom:30px;
+}
+
+.hero h1{
+    font-size:clamp(42px,8vw,78px);
+    line-height:1.05;
+    margin-bottom:25px;
+}
+
+.hero-subtitle{
+    max-width:760px;
+    margin:auto;
+    color:#e5dfd2;
+    font-size:20px;
+}
+
+.release{
+    margin-top:30px;
+    color:#e3c77f;
+    font-family:Arial,sans-serif;
+    font-weight:bold;
+    letter-spacing:2px;
+}
+
+.free-badge{
+    display:inline-block;
+    margin-top:22px;
+    background:#d9b86c;
+    color:#07182e;
+    padding:10px 20px;
+    font-family:Arial,sans-serif;
+    font-weight:bold;
+}
+
+/* BUTTON */
+
+.button{
+    display:inline-block;
+    margin-top:28px;
+    padding:15px 30px;
+    background:#d9b86c;
+    color:#07182e;
+    text-decoration:none;
+    font-family:Arial,sans-serif;
+    font-weight:bold;
+    border-radius:4px;
+    transition:.3s;
+}
+
+.button:hover{
+    transform:translateY(-2px);
+}
+
+/* SECTIONS */
+
+section{
+    padding:85px 0;
+}
+
+.section-title{
+    text-align:center;
+    font-size:42px;
+    margin-bottom:20px;
+}
+
+.gold{
+    color:#b18a3a;
+}
+
+.section-intro{
+    max-width:800px;
+    margin:0 auto 45px;
+    text-align:center;
+    font-size:18px;
+}
+
+/* ABOUT */
+
+.about{
+    background:#fffdf8;
+}
+
+.about-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:45px;
+    align-items:center;
+}
+
+.about-box{
+    padding:35px;
+    background:#f4ecdc;
+    border-left:4px solid #c6a65d;
+}
+
+.about-box h3{
+    margin-bottom:15px;
+    font-size:25px;
+}
+
+/* CHAPTERS */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:22px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:8px;
+    box-shadow:0 8px 25px rgba(0,0,0,.07);
+    border-top:3px solid #c6a65d;
+}
+
+.card span{
+    display:block;
+    color:#b18a3a;
+    font-family:Arial,sans-serif;
+    font-size:12px;
+    font-weight:bold;
+    letter-spacing:1px;
+    margin-bottom:10px;
+}
+
+.card h3{
+    font-size:22px;
+    margin-bottom:10px;
+}
+
+/* BIRTHDAY */
+
+.gift{
+    background:#0d2744;
+    color:white;
+    text-align:center;
+}
+
+.gift h2{
+    color:white;
+}
+
+.gift-message{
+    max-width:750px;
+    margin:auto;
+    color:#e7d8b7;
+    font-size:25px;
+    font-style:italic;
+}
+
+/* COUNTDOWN */
+
+.countdown{
+    background:#eee5d4;
+    text-align:center;
+}
+
+.countdown-box{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    margin-top:35px;
+    flex-wrap:wrap;
+}
+
+.time{
+    background:#102b49;
+    color:white;
+    min-width:110px;
+    padding:20px 15px;
+    border-radius:6px;
+}
+
+.time strong{
+    display:block;
+    font-size:32px;
+    color:#dfc27a;
+}
+
+.time small{
+    font-family:Arial,sans-serif;
+    font-size:11px;
+    letter-spacing:1px;
+}
+
+/* AUTHOR */
+
+.author{
+    background:#fffdf8;
+}
+
+.author-box{
+    max-width:850px;
+    margin:auto;
+    text-align:center;
+}
+
+.author-name{
+    font-size:34px;
+    margin-bottom:8px;
+}
+
+.author-role{
+    color:#a77e2c;
+    font-family:Arial,sans-serif;
+    font-weight:bold;
+    margin-bottom:25px;
+}
+
+/* DOWNLOAD */
+
+.download{
+    background:#f4ecdc;
+    text-align:center;
+}
+
+.download-card{
+    max-width:700px;
+    margin:auto;
+    background:white;
+    padding:45px 25px;
+    border-radius:10px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.lock{
+    font-size:40px;
+    margin-bottom:10px;
+}
+
+.disabled{
+    background:#999;
+    color:white;
+    cursor:not-allowed;
+    pointer-events:none;
+}
+
+/* FOOTER */
+
+footer{
+    background:#06162c;
+    color:#cfc7b7;
+    text-align:center;
+    padding:40px 20px;
+    font-family:Arial,sans-serif;
+    font-size:14px;
+}
+
+footer strong{
+    color:white;
+}
+
+/* MOBILE */
+
+@media(max-width:800px){
+
+    .nav-links{
+        display:none;
+    }
+
+    .about-grid{
+        grid-template-columns:1fr;
+    }
+
+    .cards{
+        grid-template-columns:1fr;
+    }
+
+    .section-title{
+        font-size:34px;
+    }
+
+    .hero-subtitle{
+        font-size:17px;
+    }
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- NAVIGATION -->
+
+<nav>
+<div class="container nav-inner">
+
+<div class="logo">
+TURNING CAMPUS IDEAS
+</div>
+
+<div class="nav-links">
+<a href="#about">About</a>
+<a href="#inside">Inside</a>
+<a href="#author">Author</a>
+<a href="#download">Free Copy</a>
+</div>
+
+</div>
+</nav>
+
+
+<!-- HERO -->
+
+<header class="hero">
+
+<div class="hero-content">
+
+<div class="badge">
+A BIRTHDAY GIFT TO NIGERIAN STUDENTS
+</div>
+
+<h1>
+Turning Campus Ideas into Reality
+</h1>
+
+<p class="hero-subtitle">
+A Practical Guide for Nigerian Student Entrepreneurship and Innovation
+</p>
+
+<div class="release">
+OFFICIAL BOOK RELEASE<br>
+19 SEPTEMBER 2026
+</div>
+
+<div class="free-badge">
+100% FREE DIGITAL COPY
+</div>
+
+<br>
+
+<a href="#about" class="button">
+EXPLORE THE BOOK
+</a>
+
+</div>
+
+</header>
+
+
+<!-- ABOUT -->
+
+<section class="about" id="about">
+
+<div class="container">
+
+<h2 class="section-title">
+About the <span class="gold">Book</span>
+</h2>
+
+<p class="section-intro">
+A practical guide created for Nigerian students who want to develop
+ideas, build useful skills and explore entrepreneurship while still
+in school.
+</p>
+
+<div class="about-grid">
+
+<div>
+<h3>From Ideas to Action</h3>
+
+<p>
+Many students have ideas but may struggle with confidence,
+clarity, capital or knowing where to begin. This book focuses
+on practical steps that can help students move from simply
+having an idea toward taking action.
+</p>
+
+<br>
+
+<p>
+It explores practical opportunities, starting small,
+developing consistency and building skills that can remain
+useful beyond campus.
+</p>
+</div>
+
+<div class="about-box">
+
+<h3>What the Book Focuses On</h3>
+
+<p>
+Student mindset, practical campus business opportunities,
+consistency, balancing academics with business, discipline,
+time management, branding, growth and life after school.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- INSIDE -->
+
+<section id="inside">
+
+<div class="container">
+
+<h2 class="section-title">
+What's <span class="gold">Inside</span>
+</h2>
+
+<p class="section-intro">
+A practical journey from developing the right mindset to
+building ideas that can grow beyond campus.
+</p>
+
+<div class="cards">
+
+<div class="card">
+<span>CHAPTER 01</span>
+<h3>The Student Mindset for Business</h3>
+<p>
+Developing the mindset needed to begin, overcome common
+mental barriers and start small.
+</p>
+</div>
+
+
+<div class="card">
+<span>CHAPTER 02</span>
+<h3>Campus Business Ideas That Work</h3>
+<p>
+Exploring practical business opportunities that can be
+started around the student environment.
+</p>
+</div>
+
+
+<div class="card">
+<span>CHAPTER 03</span>
+<h3>Consistency & Balancing Academics</h3>
+<p>
+Understanding how to pursue business while keeping
+academic responsibilities a priority.
+</p>
+</div>
+
+
+<div class="card">
+<span>CHAPTER 04</span>
+<h3>Discipline & Time Management</h3>
+<p>
+Building discipline, consistency and realistic systems
+for managing time and responsibilities.
+</p>
+</div>
+
+
+<div class="card">
+<span>CHAPTER 05</span>
+<h3>Building a Brand & Growing Beyond Campus</h3>
+<p>
+Understanding branding, digital leverage, growth and
+opportunities beyond school.
+</p>
+</div>
+
+
+<div class="card">
+<span>CONCLUSION</span>
+<h3>Start Small. Start Smart.</h3>
+<p>
+Turning knowledge into action and taking the first
+practical step toward your idea.
+</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- BIRTHDAY GIFT -->
+
+<section class="gift">
+
+<div class="container">
+
+<h2 class="section-title">
+This Birthday, I Choose to Give Back.
+</h2>
+
+<p class="gift-message">
+“A practical gift for students with ideas, ambition and
+the desire to create something meaningful.”
+</p>
+
+</div>
+
+</section>
+
+
+<!-- COUNTDOWN -->
+
+<section class="countdown">
+
+<div class="container">
+
+<h2 class="section-title">
+The Official Release
+</h2>
+
+<p class="section-intro">
+The free digital copy will be available on
+<strong>19 September 2026.</strong>
+</p>
+
+<div class="countdown-box">
+
+<div class="time">
+<strong id="days">--</strong>
+<small>DAYS</small>
+</div>
+
+<div class="time">
+<strong id="hours">--</strong>
+<small>HOURS</small>
+</div>
+
+<div class="time">
+<strong id="minutes">--</strong>
+<small>MINUTES</small>
+</div>
+
+<div class="time">
+<strong id="seconds">--</strong>
+<small>SECONDS</small>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- AUTHOR -->
+
+<section class="author" id="author">
+
+<div class="container">
+
+<div class="author-box">
+
+<h2 class="section-title">
+About the <span class="gold">Author</span>
+</h2>
+
+<h3 class="author-name">
+Comrade Suleiman Naim Gambo
+</h3>
+
+<p class="author-role">
+Director of Special Duties, NANS JCC Nasarawa State
+</p>
+
+<p>
+The author presents this book as a practical resource for
+Nigerian students interested in entrepreneurship,
+innovation and personal development while navigating
+campus life.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- DOWNLOAD -->
+
+<section class="download" id="download">
+
+<div class="container">
+
+<h2 class="section-title">
+Get Your <span class="gold">Free Copy</span>
+</h2>
+
+<div class="download-card">
+
+<div class="lock">
+🔒
+</div>
+
+<h3>
+DOWNLOAD OPENS 19 SEPTEMBER 2026
+</h3>
+
+<p>
+The digital copy will be made available here completely
+free on the official release date.
+</p>
+
+<a href="#" class="button disabled">
+DOWNLOAD FREE COPY
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<p>
+<strong>Comr. Suleiman Naim Gambo</strong>
+</p>
+
+<p>
+Director of Special Duties, NANS JCC Nasarawa State
+</p>
+
+<br>
+
+<p>
+Turning Campus Ideas into Reality · 2026
+</p>
+
+</footer>
+
+
+<!-- COUNTDOWN SCRIPT -->
+
+<script>
+
+const releaseDate = new Date("September 19, 2026 00:00:00").getTime();
+
+function updateCountdown(){
+
+    const now = new Date().getTime();
+
+    const distance = releaseDate - now;
+
+    if(distance <= 0){
+
+        document.getElement
