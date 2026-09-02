@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Turning Campus Ideas into Reality | Comrade Suleiman Naim Gambo</title>
+
+    <meta name="description" content="Turning Campus Ideas into Reality — A Practical Guide for Nigerian Student Entrepreneurship and Innovation by Comrade Suleiman Naim Gambo. Free PDF release on 19 September 2026.">
+
+    <meta name="keywords" content="Turning Campus Ideas into Reality, Suleiman Naim Gambo, Nigerian students, student entrepreneurship, campus business, entrepreneurship">
+
+    <meta name="author" content="Comrade Suleiman Naim Gambo">
+
+    <meta property="og:title" content="Turning Campus Ideas into Reality">
+    <meta property="og:description" content="A Practical Guide for Nigerian Student Entrepreneurship and Innovation by Comrade Suleiman Naim Gambo.">
+    <meta property="og:type" content="website">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f6f1e7;
+            color: #17243d;
+            line-height: 1.7;
+        }
+
+        nav {
+            background: #0a1d38;
+            color: white;
+            padding: 16px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-weight: 800;
+            color: #d4aa45;
+            font-size: 16px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 15px;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #d4aa45;
+        }
+
+        .hero {
+            background: #0a1d38;
+            color: white;
+            padding: 80px 7%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 55px;
+            flex-wrap: wrap;
+        }
+
+        .hero-text {
+            max-width: 650px;
+        }
+
+        .tag {
+            color: #d4aa45;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-size: 13px;
+        }
+
+        h1 {
+            font-size: clamp(42px, 7vw, 76px);
+            line-height: 1.02;
+            margin: 15px 0;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: #e2e7ee;
+            margin-top: 10px;
+        }
+
+        .cover {
+            width: 285px;
+            max-width: 80vw;
+            border-radius: 7px;
+            box-shadow: 0 20px 45px rgba(0,0,0,0.5);
+        }
+
+        .btn {
+            display: inline-block;
+            background: #d4aa45;
+            color: #0a1d38;
+            padding: 14px 25px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 800;
+            margin-top: 25px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            opacity: 0.9;
+        }
+
+        section {
+            max-width: 1100px;
+            margin: auto;
+            padding: 70px 7%;
+        }
+
+        h2 {
+            font-size: 36px;
+            color: #0a1d38;
+            margin-bottom: 20px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+            gap: 18px;
+            margin-top: 30px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border: 1px solid #e2d9c8;
+            border-radius: 9px;
+        }
+
+        .card h3 {
+            color: #0a1d38;
+            margin-bottom: 8px;
+        }
+
+        .author {
+            background: white;
+            max-width: none;
+        }
+
+        .author-inner {
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .author-box {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .author-placeholder {
+            width: 170px;
+            height: 170px;
+            border-radius: 50%;
+            background: #e9dfcc;
+            flex-shrink: 0;
+        }
+
+        .release {
+            max-width: none;
+            background: #0a1d38;
+            color: white;
+            text-align: center;
+        }
+
+        .release h2 {
+            color: white;
+        }
+
+        .release p {
+            max-width: 750px;
+            margin: 10px auto;
+            color: #e2e7ee;
+        }
+
+        .date {
+            color: #d4aa45;
+            font-size: 30px;
+            font-weight: 800;
+            margin: 20px 0;
+        }
+
+        footer {
+            background: #06152a;
+            color: #d1d7df;
+            text-align: center;
+            padding: 35px 7%;
+        }
+
+        footer strong {
+            color: #d4aa45;
+        }
+
+        @media (max-width: 700px) {
+
+            nav {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav a {
+                margin: 0 6px;
+                font-size: 12px;
+            }
+
+            .hero {
+                text-align: center;
+                padding: 60px 6%;
+            }
+
+            h1 {
+                font-size: 46px;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+
+            h2 {
+                font-size: 30px;
+            }
+
+            .author-box {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <nav>
+
+        <div class="logo">
+            TURNING CAMPUS IDEAS INTO REALITY
+        </div>
+
+        <div>
+            <a href="#about">About</a>
+            <a href="#inside">Inside</a>
+            <a href="#author">Author</a>
+            <a href="#download">Download</a>
+        </div>
+
+    </nav>
+
+
+    <!-- HERO SECTION -->
+    <header class="hero">
+
+        <div class="hero-text">
+
+            <div class="tag">
+                A Practical Guide for Nigerian Students
+            </div>
+
+            <h1>
+                Turning Campus Ideas into Reality
+            </h1>
+
+            <p>
+                A Practical Guide for Nigerian Student Entrepreneurship and Innovation.
+            </p>
+
+            <p>
+                <strong>
+                    By Comrade Suleiman Naim Gambo
+                </strong>
+                <br>
+                Director of Special Duties, NANS JCC Nasarawa State Axis
+            </p>
+
+            <a href="#download" class="btn">
+                GET THE FREE BOOK
+            </a>
+
+        </div>
+
+
+        <div>
+
+            <img
+                src="book-cover.png"
+                alt="Turning Campus Ideas into Reality book cover"
+                class="cover"
+            >
+
+        </div>
+
+    </header>
+
+
+    <!-- ABOUT THE BOOK -->
+    <section id="about">
+
+        <h2>
+            About the Book
+        </h2>
+
+        <p>
+            Many Nigerian students have ideas but lack the confidence,
+            clarity, or starting point to turn those ideas into something
+            practical.
+        </p>
+
+        <br>
+
+        <p>
+            <em>
+                Turning Campus Ideas into Reality
+            </em>
+            is a practical guide created to help students develop an
+            entrepreneurial mindset, identify realistic campus opportunities,
+            start small, remain consistent, and balance academics with business.
+        </p>
+
+        <br>
+
+        <p>
+            The book focuses on practical opportunities that can be started
+            with little or no capital and encourages students to use their
+            time, creativity, skills, and networks to create value.
+        </p>
+
+    </section>
+
+
+    <!-- WHAT'S INSIDE -->
+    <section id="inside">
+
+        <h2>
+            What's Inside
+        </h2>
+
+        <div class="grid">
+
+            <div class="card">
+                <h3>
+                    Chapter 1
+                </h3>
+
+                <p>
+                    The Student Mindset for Business
+                </p>
+            </div>
+
+
+            <div class="card">
+                <h3>
+                    Chapter 2
+                </h3>
+
+                <p>
+                    Campus Business Ideas That Work
+                </p>
+            </div>
+
+
+            <div class="card">
+                <h3>
+                    Chapter 3
+                </h3>
+
+                <p>
+                    Building Consistency and Balancing Academics with Business
+                </p>
+            </div>
+
+
+            <div class="card">
+                <h3>
+                    Chapter 4
+                </h3>
+
+                <p>
+                    The Power of Discipline, Consistency, and Time Management
+                </p>
+            </div>
+
+
+            <div class="card">
+                <h3>
+                    Chapter 5
+                </h3>
+
+                <p>
+                    Building a Brand and Growing Beyond Campus
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT THE AUTHOR -->
+    <section id="author" class="author">
+
+        <div class="author-inner">
+
+            <h2>
+                About the Author
+            </h2>
+
+            <div class="author-box">
+
+                <div class="author-placeholder">
+                </div>
+
+
+                <div>
+
+                    <p>
+                        <strong>
+                            Comrd. Suleiman Naim Gambo
+                        </strong>
+                        is a final-year Economics student at Nasarawa State
+                        University, Keffi, an entrepreneur, student leader,
+                        and youth development advocate.
+                    </p>
+
+
+                    <p style="margin-top: 15px;">
+
+                        He currently serves as Director of Special Duties,
+                        NANS JCC Nasarawa State Axis, and has held various
+                        leadership roles focused on entrepreneurship,
+                        skills acquisition, empowerment, and student development.
+
+                    </p>
+
+
+                    <p style="margin-top: 15px;">
+
+                        He is also the founder of NSG Global Enterprises
+                        and is passionate about helping young people turn
+                        their ideas into practical opportunities.
+
+                    </p>
+
+
+                    <p style="margin-top: 15px;">
+
+                        <em>
+                            Turning Campus Ideas into Reality
+                        </em>
+                        was inspired by his belief that students can build
+                        meaningful ventures while pursuing their education.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- DOWNLOAD SECTION -->
+    <section id="download" class="release">
+
+        <h2>
+            Free Birthday Gift to Nigerian Students
+        </h2>
+
+        <p>
+            This book is being released as a free gift to Nigerian students
+            on the author's birthday.
+        </p>
+
+
+        <div class="date">
+            19 SEPTEMBER 2026
+        </div>
+
+
+        <!-- PDF DOWNLOAD BUTTON -->
+        <a
+            href="turning-campus-ideas-into-reality.pdf"
+            class="btn"
+            download
+        >
+            DOWNLOAD FREE PDF
+        </a>
+
+
+        <p style="margin-top: 20px; font-size: 14px;">
+
+            The PDF download is currently active for testing.
+            The download can be locked again before the official release.
+
+        </p>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p>
+            <strong>
+                Turning Campus Ideas into Reality
+            </strong>
+        </p>
+
+        <p>
+            By Comrade Suleiman Naim Gambo
+        </p>
+
+        <p style="margin-top: 8px;">
+            © 2026. All rights reserved.
+        </p>
+
+    </footer>
+
+
+</body>
+</html>
